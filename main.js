@@ -13,3 +13,9 @@ function menuBarList() {
 function myFunction(x) {
     x.classList.toggle("fa-xmark")
 }
+
+
+
+// to initialize on-scroll animations
+
+new WOW().init();
