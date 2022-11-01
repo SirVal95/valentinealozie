@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -111,6 +111,7 @@ header {
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
+    margin-bottom: 20px;
     color: #000;
 }
 
@@ -171,6 +172,11 @@ header {
     .about {
         flex-direction: column;
         padding-left: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .my-photo img {
