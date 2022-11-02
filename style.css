@@ -143,7 +143,7 @@ header {
     font-weight: 500;
     line-height: 30px;
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .about-me a, .connect-box a{
@@ -256,6 +256,15 @@ header {
     margin-bottom: 15px;
 }
 
+.service-box img {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -100%;
+    margin-left: 100%;
+    
+}
+
 .service-box h4{
     font-weight: 700;
     margin-bottom: 15px;
@@ -273,6 +282,140 @@ header {
 .subservice .space {
     width: 1px;
     height: 1px;
+}
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    padding: 50px 10px;
+    background: linear-gradient(200deg, #ff634734, #ff63471a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.portfolio-set {
+    margin-bottom: 25px;
+}
+
+.portfolio-set span {
+    padding: 5px;
+    background: #ffff;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.portfolio-set span:first-child {
+    margin-left: 0;
+}
+
+.portfolio-set span:hover {
+    background: #ff6347;
+    color: #ffff;
+}
+
+.portfolio-set span:last-child {
+    background: #ff6347;
+    color: #ffff;
+}
+
+.my-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-real {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-front1, .portfolio-front2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-front1 {
+    margin-bottom: 40px;
+}
+
+.portfolio-box {
+    height: auto;
+    margin-left: 30px;
+    cursor: pointer;
+    background: #ffff;
+    transition: 0.5s ease;
+}
+
+.portfolio-box:hover {
+    transform-origin: 0 0;
+    transform: rotate(2deg);
+}
+
+.portfolio-box img {
+    width: 280px;
+    height: 150px;
+}
+
+.portfolio-box .subbox {
+    width: 280px;
+    height: 200px;
+    margin-top: -5px;
+    padding: 20px;
+}
+
+.portfolio-box .subbox-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.portfolio-box .subbox-a a {
+    color: #ff6347;
+}
+
+.portfolio-box .subbox-a:hover {
+    font-size: 18px;
+}
+
+.subbox .subbox-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subbox-text h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #00000079;
+    margin: 30px 0;
+}
+
+.subbox-text span {
+    padding: 5px;
+    background: #00000028;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #ff6347;
 }
 
 @media screen and (max-width:900px) {
@@ -318,7 +461,7 @@ header {
         margin-top: 20px;
     }
 
-    .services .social-connect {
+    .social-connect {
         display: none;
     }
 
@@ -348,6 +491,18 @@ header {
         margin-left: 0;
         margin-bottom: 30px;
         padding: 12% 5% 12% 5%;
+    }
+
+    .portfolio-front1 {
+        flex-direction: column;
+    }
+
+    .portfolio-front2 {
+        flex-direction: column;
+    }
+
+    .portfolio-box {
+        margin: 20px 0;
     }
 }
 
