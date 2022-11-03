@@ -610,6 +610,213 @@ header {
     color: #00000081;
 }
 
+.connect {
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.connect-real {
+    padding: -3px;
+    border: 1.5px solid #ff6347;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+}
+
+.connect-real .connect-box1, .connect-real .connect-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    height: auto;
+}
+
+.connect-real .connect-box1 {
+    background: #ffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px 0 20px 20px;
+}
+
+.connect-real .connect-box2 {
+   padding: 120px 40px;
+   background: linear-gradient(200deg, #ff6347a6, #ff634786), url(assets/images/abstract-geometry-shape-podium-blue-purple-pastel-product-stand-presentation-with-minimal-style_1258-92580.webp) no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: fit-content;
+}
+
+.connect-real h5 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.connect-real .space {
+    width: 80px;
+    height: 7px;
+    background: #ff6347;
+    margin-bottom: 10px;
+}
+
+.connect-real form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.connect-real form input {
+    border: none;
+    padding: 15px;
+    background: #0000000c;
+    margin: 15px 0;
+    width: 30vw;
+}
+
+.connect-real form textarea {
+    width: 30vw;
+    padding: 15px;
+    background: #0000000c;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.connect-real form button {
+    background: #ff6347;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px #00000059;
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+}
+
+.connect-real form button:hover {
+    transform: translateY(10px);
+} 
+
+.connect-real form a {
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.connect-box2 .space {
+    background: #ffff;
+}
+
+.connect-real .connect-subbox p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.connect-real .connect-subbox p:hover {
+    transform: translateY(-10px);
+}
+
+.connect-real .connect-subbox p:first-child {
+    margin-top: 30px;
+}
+
+.connect-real .connect-subbox p i {
+    margin-right: 10px;
+    padding: 10px;
+    background: #ff6347;
+    color: #ffff;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    background: #ff6347;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-box:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons a{
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    transition: 0.5s ease;
+}
+
+.footer-icons a:hover {
+    font-size: 20px;
+}
+
+.footer-box {
+    color: white;
+}
+
+.footer-box button {
+    background: transparent;
+    padding: 15px 30px;
+    margin-left: 40px;
+    border: 2.5px solid #ffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-box button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffff;
+    transition: 0.5s ease;
+}
+
+.footer-box button a:hover {
+    margin-right: 15px;
+}
+
+.footer-box button a i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
 
 @media screen and (max-width:900px) {
 
@@ -733,7 +940,82 @@ header {
     }
 
     .exp-box:last-child {
-        margin-left: -22px;
+        margin-left: -15px;
+    }
+
+    .connect {
+        height: auto;
+    }
+
+    .connect h1 {
+        margin-top: 40px;
+    }
+
+    .connect-real {
+        flex-direction: column-reverse;
+        border: none;
+        width: 100vw;
+        padding: 10px;
+    }
+    
+    .connect-real .connect-box1 {
+        width: 100%;
+        border-top-left-radius: none;
+        border-bottom-left-radius: none;
+        margin: 30px 0 30px 30px;
+        
+    }
+
+    .connect-real .connect-box2 {
+        width: 90%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .connect-real .connect-subbox p:first-child {
+        margin-top: 10px;
+    }
+
+    .connect-real .connect-subbox p i {
+        font-size: 18px;
+        padding: 8px;
+        margin-right: 8px;
+    }
+
+    .connect-real form input {
+        width: 80vw;
+    }
+
+    .connect-real form textarea {
+        width: 80vw;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-box:first-child {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .footer-icons a {
+        margin: 0 1px;
+    }
+
+    .footer-box button {
+        margin-left: 15px;
+        padding: 15px 20px;
+    }
+
+    .footer-box button a i{
+        margin-left: 2px;
+    }
+
+    .footer-box p {
+        text-align: center;
+        line-height: 25px;
     }
 }
 
@@ -753,5 +1035,9 @@ header {
 
     .tool-main2 .tool-main-box:last-child{
         margin-bottom: 30px;
+    }
+
+    .footer-box button {
+        margin-left: 20px;
     }
 }
