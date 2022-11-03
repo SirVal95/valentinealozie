@@ -497,7 +497,7 @@ header {
 
 .my-tools {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -510,7 +510,7 @@ header {
 }
 
 .tools .tool-box img {
-    background: #ff6347;
+    background: #ff6347be;
     padding: 10px;
     border-radius: 50px;
     width: auto;
@@ -553,6 +553,62 @@ header {
     align-items: center;
 }
 
+.experiences {
+    margin-left: 80px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiences .exp-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    color: #000;
+   
+}
+
+.exp-box .space{
+    /* display: none; */
+    height: 10px;
+    width: 10px;
+    background: #ff6347;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 1px 1px 5px 5px #ff63479f;
+}
+
+.exp-box:last-child {
+    margin-left: -60px;
+}
+
+.exp-box h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+    
+}
+
+.exp-box p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.exp-box p:hover {
+    transform: scale(1.05);
+}
+
+.exp-box p span {
+    font-size: 14px;
+    color: #00000081;
+}
 
 
 @media screen and (max-width:900px) {
@@ -650,6 +706,10 @@ header {
         margin-left: 0;
     }
 
+    .my-tools {
+        flex-direction: column;
+    }
+
     .tools {
         height: auto;
         padding: 40px 10px;
@@ -665,6 +725,15 @@ header {
 
     .tools .tool-box {
         margin: 0 25px 0 0;
+    }
+
+    .experiences {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .exp-box:last-child {
+        margin-left: -22px;
     }
 }
 
