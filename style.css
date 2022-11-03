@@ -157,6 +157,55 @@ header {
     border-radius: 20px;
     box-shadow: 1px 1px 5px 5px #00000059;
     display: inline-block;
+    animation: buttonshake 3.5s linear infinite;
+    visibility: hidden;
+}
+
+@keyframes buttonshake {
+    0% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    20% {
+        transform: translateY(-7px);
+        visibility: visible;
+    }
+
+    30% {
+        transform: translateY(-5px);
+        visibility: visible;
+    }
+
+    40% {
+        transform: translateY(-3px);
+        visibility: visible;
+    }
+
+    50% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    60% {
+        transform: translateY(3px);
+        visibility: visible;
+    }
+
+    70% {
+        transform: translateY(5px);
+        visibility: visible;
+    }
+
+    80% {
+        transform: translateY(7px);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(10);
+        visibility: visible;
+    }
 }
 
 .my-photo img{
@@ -239,6 +288,7 @@ header {
     background: #ff6347;
     color: #ffff;
     border: none;
+    transform: scale(1.05);
 }
 
 .connect-box {
@@ -258,11 +308,12 @@ header {
 
 .service-box img {
     width: auto;
-    height: 40px;
+    height: 60px;
     border-radius: 50%;
     margin-top: -100%;
-    margin-left: 100%;
-    
+    margin-left: 90%;
+    background: #ff6347;
+    padding: 10px;
 }
 
 .service-box h4{
@@ -303,7 +354,7 @@ header {
 }
 
 .portfolio-set {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .portfolio-set span {
@@ -354,17 +405,20 @@ header {
     margin-bottom: 40px;
 }
 
+.portfolio-box-container{
+    transition: 0.5s ease; 
+}
+
 .portfolio-box {
     height: auto;
     margin-left: 35px;
     cursor: pointer;
     background: #ffff;
-    transition: 0.5s ease;
+    
 }
 
-.portfolio-box:hover {
-    transform-origin: 0 0;
-    transform: rotate(2deg);
+.portfolio-box-container:hover {
+    transform: translateY(-12px);
 }
 
 .portfolio-box-container h6 {
@@ -423,6 +477,83 @@ header {
     font-size: 15px;
     color: #ff6347;
 }
+
+.tools {
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.my-tools {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tools .tool-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.tools .tool-box img {
+    background: #ff6347;
+    padding: 10px;
+    border-radius: 50px;
+    width: auto;
+    height: 70px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.tools .tool-box img:hover {
+    transform: translateX(-12px);
+    box-shadow: 1px 1px 10px 10px #ff63479f;
+}
+
+.tools .tool-box h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #00000091;
+}
+
+.tool-real {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-main2, .tool-main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-main2 {
+    margin-top: 40px;
+}
+
+.tool-main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 @media screen and (max-width:900px) {
 
@@ -518,6 +649,23 @@ header {
     .portfolio-box-container h6 {
         margin-left: 0;
     }
+
+    .tools {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .tools h1 {
+        font-size: 25px;
+    }
+
+    .tool-main2 {
+        flex-direction: column-reverse;
+    }
+
+    .tools .tool-box {
+        margin: 0 25px 0 0;
+    }
 }
 
 @media screen and (max-width:1100px) {
@@ -527,6 +675,14 @@ header {
     }
 
     .services-front {
+        margin-bottom: 30px;
+    }
+
+    .tool-main2 {
+        flex-direction: column-reverse;
+    }
+
+    .tool-main2 .tool-main-box:last-child{
         margin-bottom: 30px;
     }
 }
