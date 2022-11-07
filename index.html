@@ -17,18 +17,19 @@
 </head>
 <body>
     <header id="home">
-        <div class="menu-holder ">
-            <div class="menu-list">
-                <div class="menu-bar wow fadeInRight" id="menu-bar">
-                    <a href="#home"><i class="fa-solid fa-house"></i><h4>Home</h4></a>
-                    <a href="#services"><i class="fa-brands fa-servicestack"></i><h4>Services</h4></a>
-                    <a href="#portfolio"><i class="fa-solid fa-bag-shopping"></i><h4>Portfolio</h4></a>
-                    <a href="#skills"><i class="fa-solid fa-kitchen-set"></i><h4>Skills</h4></a>
-                    <a href="#contact"><i class="fa-solid fa-address-book"></i><h4>Contacts</h4></a>
-                </div>
-                <a href="javascript:void(0);" class="icon " onclick="menuBarList()"><i onclick="myFunction(this)" class="fa-solid fa-bars"></i></a>
-            </div>
+        <div class="menu-park">
+            <button class="hamburger-menu">
+                <div class="bar"></div>
+            </button>
         </div>
+        <nav class="mobile-nav">
+            <a href="#home"><i class="fa-solid fa-house"></i><h4>Home</h4></a>
+            <a href="#services"><i class="fa-brands fa-servicestack"></i><h4>Services</h4></a>
+            <a href="#portfolio"><i class="fa-solid fa-bag-shopping"></i><h4>Portfolio</h4></a>
+            <a href="#skills"><i class="fa-solid fa-kitchen-set"></i><h4>Skills</h4></a>
+            <a href="#contact"><i class="fa-solid fa-address-book"></i><h4>Contacts</h4></a>
+        </nav>
+    
 
         <div class="about">
             <div class="about-me wow fadeInLeft">
@@ -77,7 +78,7 @@
 
     <section class="portfolio" id="portfolio">
         <h1 class=" wow fadeInDown">Portfolio</h1>
-        <div class="portfolio-set">
+        <div class="portfolio-set wow fadeInUp">
             <p><span>HTML & CSS</span> <span>UI/UX</span> <span>KDP</span> <span>ALL</span></p>
         </div>
         <div class="my-portfolio">
@@ -259,11 +260,11 @@
             <div class="connect-box1  wow fadeInRight">
                 <h5>Leave a message</h5>
                 <div class="space"></div>
-                <form action="real.php" method="post">
+                <form action="https://formspree.io/f/mnqrlqyp" method="POST">
                     <input type="text" placeholder="Enter Full Name" id="fullname" name="fullname" required>
                     <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
                     <textarea name="textarea" id="" cols="30" rows="10" required>Your message...</textarea>
-                    <button type="submit" class="sbmt-btn">SEND MESSAGE</button>
+                    <button type="submit" name="save" class="sbmt-btn">SEND MESSAGE</button>
                 </form>
             </div>
             <div class="connect-box2  wow fadeInLeft">
