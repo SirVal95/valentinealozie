@@ -80,6 +80,7 @@ header {
     min-height: 100vh;
     padding-top: 10%;
     background: #ff6347;
+    z-index: 99;
     transition: 0.5s;
 }
 
