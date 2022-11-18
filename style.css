@@ -420,20 +420,16 @@ header {
     margin-bottom: 40px;
 }
 
-.portfolio-box-container{
-    transition: 0.5s ease; 
-}
-
 .portfolio-box {
     height: auto;
     margin-left: 35px;
     cursor: pointer;
     background: #ffff;
-    
+    transition: 0.5s ease; 
 }
 
-.portfolio-box-container:hover {
-    transform: translateY(-12px);
+.portfolio-box:hover {
+    transform: translateY(12px);
 }
 
 .portfolio-box-container h6 {
