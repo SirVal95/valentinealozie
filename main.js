@@ -6,6 +6,12 @@ menu_btn.onclick = function(){
     mobile_menu.classList.toggle('is-active');
 }
 
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    menu_btn.classList.remove("is-active");
+    mobile_menu.classList.remove("is-active");
+}))
+
+
 // scroll reveal
 
 ScrollReveal({
